@@ -49,3 +49,19 @@ def listar_clientes():
     
     print("="*70)
     print(f"Total de clientes: {len(clientes)}")
+
+
+def buscar_cliente(cliente_id):
+    """
+    Busca um cliente pelo ID
+    
+    Args:
+        cliente_id (str): ID do cliente
+    
+    Returns:
+        dict ou None: Dados do cliente ou None se não encontrado
+    """
+    for cliente in clientes:
+        if cliente["id"] == cliente_id:
+            return cliente
+    return None
