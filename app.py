@@ -40,3 +40,32 @@ def menu_clientes():
         else:
             print("❌ Opção inválida!")
 
+def menu_quartos():
+    """Menu de gestão de quartos"""
+    while True:
+        print("\n--- GESTÃO DE QUARTOS ---")
+        print("[1] Adicionar quarto")
+        print("[2] Listar quartos")
+        print("[3] Atualizar status do quarto")
+        print("[0] Voltar")
+        
+        opcao = input("\nEscolha uma opção: ")
+        
+        if opcao == "1":
+            numero = input("Número do quarto: ")
+            tipo = input("Tipo (Single/Double/Suite): ")
+            preco = input("Preço por noite (€): ")
+            try:
+                adicionar_quarto(numero, tipo, float(preco))
+            except ValueError:
+                print("❌ Preço inválido!")
+        elif opcao == "2":
+            listar_quartos()
+        elif opcao == "3":
+            numero = input("Número do quarto: ")
+            status = input("Novo status (disponível/ocupado): ")
+            atualizar_status_quarto(numero, status)
+        elif opcao == "0":
+            break
+        else:
+            print("❌ Opção inválida!")
