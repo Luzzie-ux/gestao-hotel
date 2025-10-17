@@ -65,3 +65,22 @@ def buscar_cliente(cliente_id):
         if cliente["id"] == cliente_id:
             return cliente
     return None
+
+def remover_cliente(cliente_id):
+    """
+    Remove um cliente do sistema
+    
+    Args:
+        cliente_id (str): ID do cliente a remover
+    
+    Returns:
+        bool: True se removido, False caso contrário
+    """
+    cliente = buscar_cliente(cliente_id)
+    if cliente:
+        clientes.remove(cliente)
+        print(f"✅ Cliente {cliente_id} removido com sucesso!")
+        return True
+    else:
+        print(f"❌ Cliente {cliente_id} não encontrado!")
+        return False
