@@ -96,3 +96,26 @@ def menu_reservas():
             break
         else:
             print("❌ Opção inválida!")
+
+def main():
+    """Função principal do sistema"""
+    print("\n🏨 Bem-vindo ao Sistema de Gestão de Hotel!")
+    
+    while True:
+        mostrar_menu()
+        opcao = input("\nEscolha uma opção: ")
+        
+        if opcao == "1":
+            menu_clientes()
+        elif opcao == "2":
+            menu_quartos()
+        elif opcao == "3":
+            menu_reservas()
+        elif opcao == "0":
+            print("\n👋 Obrigado por utilizar o sistema. Até breve!")
+            break
+        else:
+            print("❌ Opção inválida! Tente novamente.")
+
+if __name__ == "__main__":
+    main()
