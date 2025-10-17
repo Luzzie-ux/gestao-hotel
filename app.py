@@ -69,3 +69,30 @@ def menu_quartos():
             break
         else:
             print("❌ Opção inválida!")
+
+def menu_reservas():
+    """Menu de gestão de reservas"""
+    while True:
+        print("\n--- GESTÃO DE RESERVAS ---")
+        print("[1] Criar reserva")
+        print("[2] Cancelar reserva")
+        print("[3] Listar reservas")
+        print("[0] Voltar")
+        
+        opcao = input("\nEscolha uma opção: ")
+        
+        if opcao == "1":
+            cliente_id = input("ID do cliente: ")
+            quarto_numero = input("Número do quarto: ")
+            data_entrada = input("Data de entrada (DD/MM/AAAA): ")
+            data_saida = input("Data de saída (DD/MM/AAAA): ")
+            criar_reserva(cliente_id, quarto_numero, data_entrada, data_saida)
+        elif opcao == "2":
+            reserva_id = input("ID da reserva: ")
+            cancelar_reserva(reserva_id)
+        elif opcao == "3":
+            listar_reservas()
+        elif opcao == "0":
+            break
+        else:
+            print("❌ Opção inválida!")
