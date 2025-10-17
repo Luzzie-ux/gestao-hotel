@@ -1,0 +1,28 @@
+*   2f7893a Merge pull request #4 from Luzzie-ux/feature-interface
+|\  
+| * db9d2e1 refactor: melhora interface e mensagens do sistema
+| * f71723c feat: adiciona menu de gestão de reservas
+| * b51f618 feat: implementa menu de gestão de quartos
+| * 731ae7a feat: adiciona menu de gestão de clientes
+| * 32b989f feat: implementa menu principal do sistema
+| * 3aa89ed feat: adiciona estrutura base da aplicação principal
+* |   386c0ab Merge pull request #3 from Luzzie-ux/feature-reservas
+|\ \  
+| * | 7111cd7 docs: adiciona documentação completa no módulo de reservas
+| |/  
+* |   8fb8a7d Merge pull request #2 from Luzzie-ux/feature-clientes
+|\ \  
+| * | 53c3f73 feat: implementa função de remoção de clientes
+| * | 6c8ff46 feat: adiciona função de busca de cliente por ID
+| * | b428553 feat: implementa função de listagem de clientes
+| * | 6175fe1 feat: implementa função de adicionar cliente
+| * | 8ace0f2 feat: adiciona estrutura base do módulo de clientes
+| |/  
+* |   fda018e Merge pull request #1 from Luzzie-ux/feature-quartos
+|\ \  
+| |/  
+|/|   
+| * d0c625f feat: adiciona estrutura do módulo de quartos
+|/  
+* 0c512f5 feat: estrutura inicial do projeto
+* 0e953ec Initial commit
