@@ -31,3 +31,21 @@ def adicionar_cliente(nome, email, telefone):
     clientes.append(cliente)
     print(f"✅ Cliente '{nome}' adicionado com sucesso! (ID: {cliente_id})")
     return cliente
+
+def listar_clientes():
+    """
+    Lista todos os clientes registados no sistema
+    """
+    if not clientes:
+        print("⚠️  Nenhum cliente registado.")
+        return
+    
+    print("\n" + "="*70)
+    print(f"{'ID':<10} {'Nome':<25} {'Email':<20} {'Telefone':<15}")
+    print("="*70)
+    
+    for cliente in clientes:
+        print(f"{cliente['id']:<10} {cliente['nome']:<25} {cliente['email']:<20} {cliente['telefone']:<15}")
+    
+    print("="*70)
+    print(f"Total de clientes: {len(clientes)}")
