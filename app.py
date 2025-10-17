@@ -18,3 +18,25 @@ def mostrar_menu():
     print("[0] Sair")
     print("-"*50)
 
+def menu_clientes():
+    """Menu de gestão de clientes"""
+    while True:
+        print("\n--- GESTÃO DE CLIENTES ---")
+        print("[1] Adicionar cliente")
+        print("[2] Listar clientes")
+        print("[0] Voltar")
+        
+        opcao = input("\nEscolha uma opção: ")
+        
+        if opcao == "1":
+            nome = input("Nome do cliente: ")
+            email = input("Email: ")
+            telefone = input("Telefone: ")
+            adicionar_cliente(nome, email, telefone)
+        elif opcao == "2":
+            listar_clientes()
+        elif opcao == "0":
+            break
+        else:
+            print("❌ Opção inválida!")
+
